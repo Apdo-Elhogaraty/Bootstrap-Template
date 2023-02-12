@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Open+Sans:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ffc107;
+}
+/* Global */
+.pd-y {
+  padding: 80px 0;
+}
+.section-title {
+  position: relative;
+  width: fit-content;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 4px;
+  background-color: var(--main-color);
+  bottom: -10px;
+  right: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+/* header */
+header {
+  box-shadow: 1px 1px 4px #ccc;
+}
+.nav-link {
+  font-size: 20px;
+}
+/* main Section */
+.main-section {
+  background-image: url(../images/slide-bg-1.jpg);
+  background-size: cover;
+  height: calc(100vh - 87px);
+  padding: 1px;
+}
+.main-section-text {
+  width: 50%;
+  margin-right: auto;
+  margin-top: 15%;
+}
+.main-section-text h3 {
+  color: #fff;
+  font-size: 45px;
+}
+.main-section-text p {
+  font-size: 22px;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .main-section-text {
+    text-align: center;
+    margin-right: unset;
+    width: 100%;
+    margin-top: 25%;
+  }
+}
+/* About Section */
+.about-text p {
+  font-size: 20px;
+  line-height: 40px;
+  width: 80%;
+  margin: 50px 0;
+}
+.about-img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .about-text button {
+    margin-bottom: 30px;
+  }
+  .about-text p {
+    width: 100%;
+  }
+}
+/* News Section */
+@media (max-width: 991px) {
+    .news .about-card {
+      margin-bottom: 30px;
+    }
+}  
+/* Subscribe Section */
+.subscribe{
+    background-image: url(../images/subscribe-our-newsletter-bg.jpg);
+    height: 400px;
+}
+.subscribe .content h2{
+    font-size: 40px;
+    color: #fff;
+}
+.subscribe .content p{
+    font-size: 18px;
+    color: #fff;
+    max-width: 800px;
+    margin: 30px 0;
+}
+.subscribe .content form input{
+    width: 600px;
+    margin-left: 30px;
+    height: 40px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.subscribe .content form button{
+    height: 40px;
+}
+@media (max-width: 991px) {
+    .subscribe .content {
+      text-align: center;
+      padding: 0 20px;
+    }
+    .subscribe .content form input {
+      width: 70%;
+    }
+}  
+/* footer */
+footer{
+    background-color: #071c33;
+    color: #fff;
+}
+footer .logo{
+    background-color: #fff;
+    padding: 20px 30px;
+}
+@media (max-width: 991px) {
+    footer .container .row > div {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+}  
